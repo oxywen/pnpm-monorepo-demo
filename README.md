@@ -22,6 +22,6 @@ pnpm add -w vue
 pnpm add -w -D vite vue-tsc typescript @vue/tsconfig @vitejs/plugin-vue @types/node @tsconfig/node18
 
 #为子package添加依赖,(--workspace表示仅添加工作区间中的依赖)
-pnpm add vue-router --filter @oxywen-repo-demo/web-demo
-pnpm add @oxywen-mono-repo/ui-components --workspace --filter @mono-repo-demo/web-demo
+pnpm add vue-router --filter web-demo
+pnpm add ui-components --workspace --filter web-demo
 ```
