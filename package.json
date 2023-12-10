@@ -1,0 +1,21 @@
+{
+  "name": "oxywen-mono-repo",
+  "private": "true",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {},
+  "author": "Wen",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.3.11"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^20.10.4",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "@vue/tsconfig": "^0.4.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.7",
+    "vue-tsc": "^1.8.25"
+  }
+}
