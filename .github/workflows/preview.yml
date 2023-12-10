@@ -21,11 +21,11 @@ jobs:
           node-version: 18
           cache: 'pnpm'
       - name: Build
-        run: pnpm install && cd ./packages/web-demo && pnpm run build-only
+        run: pnpm install --no-frozen-lockfile&& cd ./packages/web-demo && pnpm run build-only
       - name: Use Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./packages/web-demo/dist
           publish_branch: demo
           full_commit_message: ${{ github.event.head_commit.message }}
